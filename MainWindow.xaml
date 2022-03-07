@@ -1,0 +1,29 @@
+﻿<pu:WindowX x:Class="PFL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PFL"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        mc:Ignorable="d"
+        Title="PFL Dev0.0.1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush TileMode="None" ImageSource="/光圈科技.png"/>
+        </Grid.Background>
+        <ComboBox Height="30"
+          Width="200"
+          pu:ComboBoxHelper.Header="Select one : "
+          DisplayMemberPath="Id"
+          x:Name="versionCombo"
+          pu:ComboBoxHelper.ItemHeight="30" Margin="10,22,566,382" Grid.Column="1"/>
+        <Button
+        Content="启动"
+        pu:ButtonHelper.ButtonStyle="Outline"
+        pu:ButtonHelper.CornerRadius="15" Margin="516,351,10,10" FontFamily="Comic Sans MS" FontSize="36" Click="Button_Click" Grid.Column="1"/>
+    </Grid>
+</pu:WindowX>
