@@ -1,12 +1,11 @@
-﻿<pu:WindowX x:Class="PFL.MainWindow"
+﻿<Window x:Class="PFL.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PFL"
-        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
         mc:Ignorable="d"
-        Title="PFL Dev0.0.1" Height="450" Width="800">
+        Title="PFL Dev0.0.2" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -17,13 +16,27 @@
         </Grid.Background>
         <ComboBox Height="30"
           Width="200"
-          pu:ComboBoxHelper.Header="Select one : "
           DisplayMemberPath="Id"
           x:Name="versionCombo"
-          pu:ComboBoxHelper.ItemHeight="30" Margin="10,22,566,382" Grid.Column="1"/>
+          Margin="10,22,566,382" Grid.Column="1"/>
         <Button
-        Content="启动"
-        pu:ButtonHelper.ButtonStyle="Outline"
-        pu:ButtonHelper.CornerRadius="15" Margin="516,351,10,10" FontFamily="Comic Sans MS" FontSize="36" Click="Button_Click" Grid.Column="1"/>
+        Content="Start" Margin="516,351,10,10" FontFamily="Comic Sans MS" FontSize="36" Click="Button_Click" Grid.Column="1"/>
+        <ComboBox Height="30"
+          Width="200" DisplayMemberPath="Version" SelectedValuePath="Path"
+          x:Name="javaCombo" Grid.Column="1" Margin="10,141,566,263"/>
+        <TextBox Height="30"
+          Width="200"
+          x:Name="IdTextbox"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top"
+          Margin="541,303,0,0" Grid.Column="1" Text="SANTALE" FontSize="22" FontFamily="Comic Sans MS"/>
+        <TextBox Height="30"
+          Width="200"
+          x:Name="MemoryTextbox"
+          Text="1024" Grid.Column="1" Margin="10,81,566,323" FontFamily="Comic Sans MS" FontSize="20"/>
+        <Label Grid.Column="1" Content="选择Java版本" HorizontalAlignment="Left" Margin="58,116,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="设置最大内存" HorizontalAlignment="Left" Margin="58,52,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="选择游戏版本" HorizontalAlignment="Left" Margin="58,-4,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="填写游戏名称:" HorizontalAlignment="Left" Margin="598,271,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
     </Grid>
-</pu:WindowX>
+</Window>

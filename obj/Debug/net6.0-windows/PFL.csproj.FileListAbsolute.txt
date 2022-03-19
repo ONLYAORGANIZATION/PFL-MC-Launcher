@@ -9,7 +9,6 @@ C:\Users\Andrew\source\repos\PFL\PFL\bin\Debug\net6.0-windows\PFL.deps.json
 C:\Users\Andrew\source\repos\PFL\PFL\bin\Debug\net6.0-windows\PFL.runtimeconfig.json
 C:\Users\Andrew\source\repos\PFL\PFL\bin\Debug\net6.0-windows\PFL.dll
 C:\Users\Andrew\source\repos\PFL\PFL\bin\Debug\net6.0-windows\PFL.pdb
-C:\Users\Andrew\source\repos\PFL\PFL\obj\Debug\net6.0-windows\App.baml
 C:\Users\Andrew\source\repos\PFL\PFL\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\Andrew\source\repos\PFL\PFL\obj\Debug\net6.0-windows\PFL.g.resources
 C:\Users\Andrew\source\repos\PFL\PFL\obj\Debug\net6.0-windows\PFL.GeneratedMSBuildEditorConfig.editorconfig
